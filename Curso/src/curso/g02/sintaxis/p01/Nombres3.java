@@ -1,6 +1,6 @@
 package curso.g02.sintaxis.p01;
 
-/* Esta clase define variables para comprobar las normas de definicion de variables
+/** Esta clase define variables para comprobar las normas de definicion de variables
  * en Java, y luego imprime un par de mensajes
  * 
  * Author: Miguel
@@ -12,7 +12,7 @@ public class Nombres3 {
 		
 		int $nombre;
 		int pasado;		//Modificado el nombre de la variable
-		int alcance;    //Añadido el ; al final de linea
+		int alcance;    //Aï¿½adido el ; al final de linea
 		
 		int _contador;
 		_contador=25;

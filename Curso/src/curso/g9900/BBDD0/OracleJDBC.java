@@ -10,8 +10,8 @@ public class OracleJDBC {
 	public final static  String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";  
 	public final static String URL ="jdbc:oracle:thin:@localhost:1521:xe";
 	public final static String DATABASE =  "";
-	public final static String USUARIO="SYSTEM";
-	public final static String PASSWORD="Curso2022";
+	public final static String USUARIO="hr";
+	public final static String PASSWORD="hr";
 //	public final static String SQL_USE = "USE  ";
 //	public final static String SQL_CREATE = "CREATE DATABASE ";
 

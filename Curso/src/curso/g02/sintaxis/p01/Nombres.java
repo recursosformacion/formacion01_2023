@@ -6,13 +6,13 @@ public class Nombres {
 		
 		int $nombre;
 		int PasaDo;
-//		int alcance //
+		int alcance //
 		
 		int _contador;
 		_contador=25;
 		
 		$nombre=_contador;
-//		pasado=_contador;
+		pasado=_contador;
 
 		System.out.println($nombre + " / " + _contador);
 	}

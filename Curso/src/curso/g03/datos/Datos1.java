@@ -4,6 +4,7 @@ public class Datos1 {
 	static int dia=10;
 	static String nDni = "57443222";
 	static double precio;
+	
 	static final boolean ACTIVO = true;
 	
 

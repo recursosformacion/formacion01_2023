@@ -5,10 +5,12 @@ public class Datos {
 	
 
 	public static void main(String[] args) {
+		
+		
 		int dia=10;
 		String nDni = "57443222";
 		double precio;
-		final boolean ACTIVO = true;
+		final boolean ACTIVO = true;		
 		
 		precio=135.12;
 		
