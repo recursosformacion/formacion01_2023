@@ -7,13 +7,13 @@ public class DivisionPorCero {
 		int a=0;
 		int b=300;
 		int c;
-//		try {
+		try {
 			c=b/a;
 			System.out.println("El resultado es "+c);
 		
-/*		} finally {
+		} finally {
 			System.out.println("Programa finalizado");
-		}*/
+		}
 		
 		
 		

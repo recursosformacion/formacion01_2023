@@ -9,11 +9,14 @@ public class DatosArrayConFor {
 				elMes[a][b] = a + b;
 			}
 		}
-
+		int contador = 0;
 		for (int a = 0; a < elMes.length; a++) {
 			for (int b = 0; b < elMes[a].length; b++) {
-				elMes[a][b] = a + b;
+				if (contador <= 31) {
+					elMes[a][b] = ++contador;
+				} 
 			}
 		}
+		
 	}
 }

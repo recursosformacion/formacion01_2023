@@ -3,6 +3,7 @@ package curso.g11.genericos;
 public class PruebaIntercambio {
 
 	public static void main(String[] args) {
+		
 		Intercambio<String> pruebasTexto = new Intercambio<String>("Miguel","Antonio");
 		Intercambio<Integer> pruebasNumero = new Intercambio<Integer>(20,30);
 		

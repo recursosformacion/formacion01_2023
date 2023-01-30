@@ -12,7 +12,7 @@ public class NumeroAletras0 {
 		unidades = num % 10;
 		decenas = num / 10;
 		
-		System.out.println(parte2[decenas] + " y " +parte1[unidades]);
+		System.err.println(parte2[decenas] + " y " +parte1[unidades]);
 	}
 
 }

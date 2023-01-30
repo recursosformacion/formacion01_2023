@@ -5,26 +5,28 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 
 public class CalculadoraTest {
 	
 	Calculadora calc;
 	
-	@Before
-	public void inicio(){
+	@BeforeAll
+	public static void inicio(){
 		calc=new Calculadora();
 	}
 	
-	@After
-	public void fin() {
+	@AfterAll
+	public static void fin() {
 		calc = null;
 	}
 	
 	@Test
 	public void testSuma() {
 		int resp=calc.suma(10, 12);
-		assertEquals("Prueba suma 10 + 12", 20,resp,0);
-		assertEquals("Suma 7+ -3",3,calc.suma(7, -3),0);
+		assertEquals("Prueba suma 10 + 12", 22,resp,0);
+		assertEquals("Suma 7+ -3",4,calc.suma(7, -3),0);
 	}
 
 	@Test

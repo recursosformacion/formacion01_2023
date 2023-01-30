@@ -1,10 +1,12 @@
 package curso.g08.clases.p02;
 
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Abd{
 	private String modelo;
 	private int marchas;
 	private double velocidad = 0;
 	private String matricula;
+	private String  chasis;
+	private int ruedas;
 	
 	
 	static int contador;
@@ -23,7 +25,18 @@ public abstract class Vehiculo {
 		setMarchas(marchas);
 	}
 	
-	
+	public Vehiculo(String modelo, int marchas, double velocidad, String matricula, String chasis, int ruedas) {
+		this();
+		this.modelo = modelo;
+		this.marchas = marchas;
+		this.velocidad = velocidad;
+		this.matricula = matricula;
+		this.chasis = chasis;
+		this.ruedas = ruedas;
+		AccesoABD dao = new AccesoABD();
+		dao.AccesoGrabacion(this);
+	}
+
 	public String getModelo() {
 		return modelo;
 	}
@@ -47,6 +60,19 @@ public abstract class Vehiculo {
 	}
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
+	}
+
+	@Override
+	public void leer() {
+		//Convierte SQL a dominio
+		
+		
+	}
+
+	@Override
+	public s grabar() {
+		//Convierte dominio a sql
+		
 	}
 	
 	

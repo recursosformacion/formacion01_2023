@@ -13,6 +13,8 @@ public class Cuenta implements Serializable{
 	public final static String X_NUMERO = "NUMERO";
 	public final static String X_TITULAR = "TITULAR";
 	public final static String X_MOVIMIENTOS = "MOVIMIENTOS";
+
+	public static final Object INGRESO_EFECTIVO = null;
 	
 	protected String mNumero;
 	protected String mTitular;

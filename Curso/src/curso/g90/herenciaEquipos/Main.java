@@ -1,6 +1,7 @@
 package curso.g90.herenciaEquipos;
 
 import curso.utilidades.Autocar;
+import curso.utilidades.Viajante;
 
 public class Main {
 
@@ -16,6 +17,8 @@ public class Main {
 		lista[5] = new Masajista(6, "Pedro", "Arsen", 30, "Titulo", 3);
 		lista[6] = new Masajista(7, "Fernando", "Balta", 35, "masTitulo", 4);
 
+		Viajante pepe = new Masajista(7, "Fernando", "Balta", 35, "masTitulo", 4);
+		Viajante ququ = new Fan();
 		for (Miembro actual : lista) {
 			if (actual != null) {
 				au.subir(actual);

@@ -19,7 +19,8 @@ import curso.utilidades.Consola;
 public class Adivina {
 
 	public static void main(String[] args) {
-		int n, num;
+		int n
+		int num;
 		// num guarda los n�meros introducidos
 		//-----------------------------------------
 		//				System.out.print("Introduce N: ");

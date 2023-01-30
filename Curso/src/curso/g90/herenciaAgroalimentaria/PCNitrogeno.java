@@ -29,7 +29,7 @@ class PCNitrogeno extends PCongelados {
 	
 	@Override
 	public String toString(){
-		return super.toString() +
+		return "PCNitrogeno-" + super.toString() +
 				" Metodo:"+ getMetodo() + 
 				" Tiempo de exposicion:" + getSegundos();
 	}

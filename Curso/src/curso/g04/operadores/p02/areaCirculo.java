@@ -10,14 +10,14 @@ public class areaCirculo {
 
 	public static void main(String[] args) {
 
-		double r = 23; // radio
+		final double R = 23; // radio
 		double a, l; // �rea
 
-		a = Math.PI * (r * r); // para elevar al cuadrado otra opci�n es:
+		a = Math.PI * (R * R); // para elevar al cuadrado otra opci�n es:
 								// Math.pow (r, 2)
-		System.out.println("El area de una circunferencia de radio " + r + " es: " + a);
-		l = 2 * Math.PI * r;
-		System.out.println("La longitud de una circunferencia de radio " + r + " es: " + l);
+		System.out.println("El area de una circunferencia de radio " + R + " es: " + a);
+		l = 2 * Math.PI * R;
+		System.out.println("La longitud de una circunferencia de radio " + R+ " es: " + l);
 	}
 
 }

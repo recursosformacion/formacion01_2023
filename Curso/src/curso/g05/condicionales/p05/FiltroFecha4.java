@@ -4,9 +4,12 @@ package curso.g05.condicionales.p05;
 public class FiltroFecha4 {
 
 	public static void main(String[] args) {
-		int dia=20;
-		int mes=8;
-		int año=2015;
+		verFecha(20,8,2015);
+		
+		
+	}
+	public static void verFecha(int dia, int mes, int año) {
+		
 		int[] diaMes={31,28,31,30,31,30,31,31,30,31,30,31};
 		
 		boolean diaok=false;

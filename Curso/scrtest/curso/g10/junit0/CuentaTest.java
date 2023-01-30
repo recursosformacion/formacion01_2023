@@ -6,6 +6,8 @@ import java.util.Vector;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 
 public class CuentaTest {
 	CuentaFake cuenta;
@@ -14,7 +16,7 @@ public class CuentaTest {
 	final String NOMBRE_TITULAR2 = "Fulano de cual";
 	final String CONCEPTO_INGRESOS = "Prueba de ingreso";
 
-	@Before
+	@BeforeEach
 	public void inicio() throws Exception {
 		cuenta = new CuentaFake(NUMERO_CUENTA, NOMBRE_TITULAR);
 	}
@@ -80,6 +82,7 @@ public class CuentaTest {
 		assertTrue(cuenta.getSaldo() == 700.0);
 	}
 	@Test
+	@DisplayName("Nombre")
 	public void testMovimientoIngreso() throws Exception {
 		cuenta.ingresar(1000);
 		Vector<Movimiento> res = cuenta.getmMovimiento();

@@ -28,7 +28,7 @@ public class PFrescos extends Productos {
 	}
 	
 	public String toString(){		
-		return super.toString()+
+		return "PCFrescos-" + super.toString()+
 				" Fecha Envasado:"+ getFechaEnvasadoStr()+
 				" Pais Origen:" + getPaisOrigen();			
 	}

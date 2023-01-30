@@ -1,1 +1,4 @@
 /bin/
+.sonar*
+sonar-*
+org.sonar*

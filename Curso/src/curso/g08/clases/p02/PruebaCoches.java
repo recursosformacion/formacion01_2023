@@ -8,6 +8,8 @@ public class PruebaCoches {
 		Coche c2 = new Coche("Blanco","Arosa", 5); 
 		Coche c3 = new Coche("Verde","Peugeot",4);
 		Coche c4 = c1;
+		c1.activarReductora(false);
+		c2.activarReductora(true);
 		
 		Vehiculo c5 = new Coche("Azul","Seat",4);
 		Velocidad c6 = new Coche("Rojo","Set",6);
@@ -24,5 +26,6 @@ public class PruebaCoches {
 		System.out.println("\nCoche 4 es:"+c4.toString());
 		
 	}
+	
 
 }

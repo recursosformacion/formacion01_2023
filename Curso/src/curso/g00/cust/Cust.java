@@ -3,7 +3,7 @@ package curso.g00.cust;
 public class Cust {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int pruebaInt = 12345678;
 		
 		char prc=(char) pruebaInt;

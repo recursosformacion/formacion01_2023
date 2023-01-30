@@ -25,7 +25,7 @@ public class PRefrigerados extends Productos {
 	}
 	
 	public String toString(){
-		return super.toString() +
+		return "PCRefrigerados-" + super.toString() +
 				" Codigo organismo supervisor:" + getCodOrgSupAlim();
 	}
 	

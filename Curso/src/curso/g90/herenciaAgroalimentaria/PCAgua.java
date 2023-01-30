@@ -25,7 +25,7 @@ public class PCAgua extends PCongelados {
 	}
 
 	public String toString() {
-		return super.toString() + " Salinidad:" + getSalinidad();
+		return "PCAgua-" + super.toString() + " Salinidad:" + getSalinidad();
 	}
 
 }

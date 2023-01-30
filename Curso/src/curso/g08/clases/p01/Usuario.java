@@ -17,6 +17,7 @@ public class Usuario extends Persona
 		super(nombre);
 		setCodigo(codigo);
 		setContraseña(contraseña);
+		Funciones.pgrabar(this);
 	}
 	public String getCodigo() {
 		return codigo;
@@ -32,7 +33,7 @@ public class Usuario extends Persona
 	}
 	@Override
 	public String aString() {
-		// TODO Auto-generated method stub
+		
 		return "Usuario:" + getCodigo() + "-->" + getNombre();
 	}
 	private int pruebaPrivado(){

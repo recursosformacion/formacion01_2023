@@ -1,12 +1,16 @@
 package curso.g08.clases.p01;
 
-public abstract class Persona {
+public abstract class Persona implements Cosas {
 	private int id;
 	private String nombre;
+	private String direccion;
 	private String correoElectronico;
 	
 	
-	abstract String aString();
+	public abstract String aString();
+//	public String aString() {
+//		return nombre + " " + direccion;
+//	}
 	
 	
 	public String getCorreoElectronico() {
@@ -42,6 +46,16 @@ public abstract class Persona {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+	
+	public void crear() {
+		System.out.println("Creando desde persona");
+	}
+	public void borrar() {
+		System.out.println("borrando desde persona");
+	}
+	public void enviarMensaje() {
+		System.out.println("Enviando desde persona");
 	}
 	
 }

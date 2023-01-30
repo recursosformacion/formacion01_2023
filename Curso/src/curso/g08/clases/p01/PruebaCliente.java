@@ -3,7 +3,7 @@ package curso.g08.clases.p01;
 public class PruebaCliente {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Cliente c1 = new Cliente("Miguel", 25, "1029384756");
 		c1.setId(1);;
 		imprimir(c1);

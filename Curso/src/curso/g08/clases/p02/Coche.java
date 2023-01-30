@@ -1,7 +1,8 @@
 package curso.g08.clases.p02;
 
-public class Coche extends Vehiculo implements Velocidad {
+public class Coche extends Vehiculo implements Velocidad , Para4x4 {
 	private String color;
+	private boolean situacion4x4;
 	
 	
 	Coche(){
@@ -20,6 +21,9 @@ public class Coche extends Vehiculo implements Velocidad {
 
 	public void setColor(String color) {
 		this.color = color;
+		if (situacion4x4) {
+			this.color="Red";
+		}
 	}
 
 	
@@ -38,6 +42,13 @@ public class Coche extends Vehiculo implements Velocidad {
 		if (factor == Velocidad.MUCHA){
 			System.out.println("Corro mucho");
 		}
+		
+	}
+
+	@Override
+	public void activarReductora(boolean activar) {
+		situacion4x4=activar;
+		
 		
 	}
 	

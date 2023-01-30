@@ -47,7 +47,7 @@ public class PCAire extends PCongelados {
 		
 	}
 	public String toString(){
-		return super.toString()+
+		return "PCAire-" + super.toString()+
 				" %Nitrogeno:"+getpNitrogeno() +
 				" %Oxigeno:"+getpOxigeno() +
 				" %Dioxido de carbono:"+ getpDioxidoCarbono() +
