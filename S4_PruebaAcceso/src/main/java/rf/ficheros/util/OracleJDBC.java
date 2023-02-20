@@ -1,10 +1,12 @@
-package curso.g9900.BBDD0;
+package rf.ficheros.util;
 
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import rf.ficheros.modelos.Country;
 
 public class OracleJDBC {
 	private static Connection conn;
@@ -18,9 +20,8 @@ public class OracleJDBC {
 //	public final static String SQL_CREATE = "CREATE DATABASE ";
 
 	public final static String SQL_LEER_TODOS = "Select * from Employees";
-	public final static String SQL_LEER_TODOS_COUNTRY = "Select * from countries";
-
-	public static void main(String[] argv) throws SQLException {
+	
+	public Connection abrir() throws SQLException {
 
 		System.out.println("-------- Oracle JDBC Connection Testing ------");
 //-----------------Carga driver
@@ -29,7 +30,7 @@ public class OracleJDBC {
 		} catch (ClassNotFoundException e) {
 			System.out.println("Where is your Oracle JDBC Driver?");
 			e.printStackTrace();
-			return;
+			return null;
 		}
 		System.out.println("Oracle JDBC Driver Registered!");
 
@@ -40,41 +41,25 @@ public class OracleJDBC {
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
 			e.printStackTrace();
-			return;
+			return null;
 		}
-		lecturaCountry();
-
-		lecturaEmployees();
+		
+		conn.setAutoCommit(false);
+		return conn;
+		
+		
+	}
+	
+	public void cerrar() throws SQLException {
 		if (conn != null) {
 			System.out.println("You made it, take control your database now!");
+			conn.rollback();
 			conn.close();
 		} else {
 			System.out.println("Failed to make connection!");
 		}
 	}
 
-	public static void lecturaCountry() throws SQLException {
-
-		ResultSet rs=null;
-		try {
-			Statement stm = conn.createStatement();
-			rs = stm.executeQuery(SQL_LEER_TODOS_COUNTRY );
-
-			while (rs.next()) {
-				Country ctr = new Country();
-				ctr.setCountry_id(rs.getString("country_id"));
-				ctr.setCountry_name(rs.getString("country_name"));
-				ctr.setRegion_id(rs.getString("region_id"));
-				listarCtr(ctr);		
-			}
-		} catch (SQLException e) {
-			System.out.println(SQL_LEER_TODOS + " " + e.getMessage());
-		} finally {
-			if (rs!=null) {
-				rs.close();
-			}
-		}
-	}
 	
 	
 	public static void lecturaEmployees() throws SQLException {
@@ -96,7 +81,5 @@ public class OracleJDBC {
 		}
 	}
 	
-	public static void listarCtr(Country ctr) {
-		System.out.println(ctr.getCountry_id());
-	}
+	
 }

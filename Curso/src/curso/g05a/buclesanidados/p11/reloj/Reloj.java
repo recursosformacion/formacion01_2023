@@ -17,7 +17,7 @@ public class Reloj {
 
 					for (sh = 0; sh < 60; sh++) {
 					
-						System.out.print("\b\b\b\b\b\b\b\b\b\b" + myFormatter.format(dh) + ":" + 
+						System.out.println( myFormatter.format(dh) + ":" + 
 								myFormatter.format(mh) + ":" + 
 								myFormatter.format(sh));
 						Thread.sleep(1000);
@@ -25,7 +25,7 @@ public class Reloj {
 					}
 				}
 			}
-			System.out.print("\b\b\b\b\b\b\b\b\b\b");
+			
 
 		}
 	}

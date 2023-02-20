@@ -31,10 +31,11 @@ public class Servidor  extends Thread {
 	            DataOutputStream out = new DataOutputStream(server.getOutputStream());
 	            out.writeUTF("Gracias por conectarte a " + server.getLocalSocketAddress() + "\nAdiosito!");
 	            server.close();
+	            break;
 	         }catch(SocketTimeoutException s)
 	         {
 	            System.out.println("Socket timed out!");
-	            break;
+	            //break;
 	         }catch(IOException e)
 	         {
 	            e.printStackTrace();

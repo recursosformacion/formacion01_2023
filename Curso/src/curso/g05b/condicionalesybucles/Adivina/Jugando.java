@@ -21,9 +21,9 @@ public class Jugando {
 			miNum = (int) (Math.random() * 1000 + 1); // inicializo mi jugada
 			while (!finPartida) {
 
-				miTirada();
+				miTirada();						//el ordenador juega
 				if (!finJuego && !finPartida)
-					tuTirada();
+					tuTirada();					//el ordenador pregunta numero
 			}
 			System.out.println("-------------------------------------------------");
 			System.out.print("vamos " + ganoMaquina + " a " + ganoUsuario);
@@ -57,6 +57,11 @@ public class Jugando {
 		}
 	}
 
+	/**
+	 * Actualiza ganoUsuario
+	 * finPartida
+	 * Utiliza n
+	 */
 	static void tuTirada() {
 		int num;
 		System.out.print("Introduce n�mero: ");

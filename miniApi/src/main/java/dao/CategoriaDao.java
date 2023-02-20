@@ -14,16 +14,16 @@ public class CategoriaDao {
 	EntityManager manager = JPAUtil.getEntityManager();
 
 	// guardar Categoria
-	public void guardar(Categoria Categoria) {
+	public void guardar(Categoria categoria) {
 		manager.getTransaction().begin();
-		manager.persist(Categoria);
+		manager.persist(categoria);
 		manager.getTransaction().commit();		
 	}
 
 	// editar Categoria
-	public void editar(Categoria Categoria) {
+	public void editar(Categoria categoria) {
 		manager.getTransaction().begin();
-		manager.merge(Categoria);
+		manager.merge(categoria);
 		manager.getTransaction().commit();
 	}
 

@@ -4,7 +4,7 @@ package es.rf.tienda.exception;
 public class DomainException extends Exception {
 
 	DomainException() {
-
+		super("Error DomainException");
 	}
 
 	public DomainException(String msj) {
