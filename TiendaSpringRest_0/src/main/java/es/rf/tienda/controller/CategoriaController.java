@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import es.rf.tienda.dominio.*;
 import es.rf.tienda.exception.*;
-import es.rf.tienda.service.IServicio;
+import es.rf.tienda.service.*;
 
 
 /*
