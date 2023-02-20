@@ -17,8 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import es.rf.tienda.dominio.*;
-import es.rf.tienda.exception.ControllerException;
-import es.rf.tienda.exception.DomainException;
+import es.rf.tienda.exception.*;
 import es.rf.tienda.service.IServicio;
 
 
